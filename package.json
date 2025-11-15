@@ -1,0 +1,30 @@
+{
+  "name": "telegram-bot-sample",
+  "version": "1.0.0",
+  "description": "Professional Telegram bot with Telegraf and TypeScript",
+  "type": "module",
+  "main": "dist/index.mjs",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc && node scripts/rename-to-mjs.js",
+    "start": "node dist/index.mjs",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "keywords": ["telegram", "bot", "telegraf", "typescript"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "telegraf": "^4.16.3",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "typescript": "^5.3.3",
+    "tsx": "^4.7.0",
+    "eslint": "^8.56.0",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "prettier": "^3.2.4"
+  }
+}
